@@ -6,7 +6,7 @@
   "scripts": {
     "dev:client": "vite --host --port 3000",
     "dev": "pnpm run dev:client",
-    "build:client": "vite build --base=/shc-web",
+    "build:client": "vite build",
     "build": "pnpm run build:client && copy package.json dist && type nul > dist\\build.flag",
     "deploy": "gh-pages -d dist"
   },
